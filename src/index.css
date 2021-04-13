@@ -12,6 +12,9 @@
     margin: 0px;
     padding: 0px;
     background-color: #333;
+    font-family: sans-serif;
+    font-size: calc(var(--size) / 4);
+    font-weight: 700;
 }
 
 .App {
@@ -29,10 +32,16 @@
 }
 
 .display {
+    text-align: right;
     margin-bottom: var(--gap-thickness);
+    padding: 0 calc(var(--gap-thickness) * 3);
+    max-width: calc(var(--size) * 4 - var(--gap-thickness) * 3);
+    overflow: hidden;
+    text-overflow: ellipsis;
     height: var(--size);
     background-color: #111;
     border-radius: var(--gap-thickness);
+    line-height: var(--size);
 }
 
 .keypad {
@@ -51,9 +60,6 @@
     text-align: center;
     line-height: var(--size);
     background-color: var(--color-neutral2);
-    font-family: sans-serif;
-    font-size: calc(var(--size) / 4);
-    font-weight: 700;
 }
 
 .keypad-button:hover,
